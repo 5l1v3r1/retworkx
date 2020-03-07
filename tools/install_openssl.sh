@@ -9,7 +9,7 @@ fi
 wget https://www.openssl.org/source/openssl-1.1.1d.tar.gz
 tar xzvf openssl-1.1.1d.tar.gz
 pushd openssl-1.1.1d
-./config --prefix=/usr --openssldir=/usr
+./config
 make
 make install
 popd

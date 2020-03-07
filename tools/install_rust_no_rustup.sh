@@ -5,4 +5,6 @@ if [ ! -d rust-installer ]; then
     pushd rust-nightly-s390x-unknown-linux-gnu
     ./install.sh
     popd
+    rm -rf rust-nightly-s390x-unknown-linux-gnu
+    rm -rf rust-nightly-s390x-unknown-linux-gnu.tar.gz
 fi

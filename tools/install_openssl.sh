@@ -11,7 +11,7 @@ tar xzvf openssl-1.1.1d.tar.gz
 pushd openssl-1.1.1d
 ./config
 make
-sudo make install
+make install
 popd
 
 touch /tmp/openssl.installed

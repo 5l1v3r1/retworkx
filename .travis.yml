@@ -160,9 +160,7 @@ jobs:
         - CIBW_TEST_COMMAND="python -m unittest discover {project}/tests"
       if: tag IS blank
       script:
-        - sudo pip install -U twine
-        - git clone https://github.com/joerick/cibuildwheel.git
-        - sudo pip install ./cibuildwheel
+        - sudo pip install -U twine cibuildwheel==1.2.0
         - cibuildwheel --output-dir wheelhouse
         - twine upload wheelhouse/*
     - stage: deploy
